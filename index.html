@@ -4,124 +4,121 @@
   <meta charset="UTF-8">
   <title>DAUDI GARAGE | Mods & Skins</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0f19;
-      color: #e5e7eb;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a; /* Rangi ya giza ya kisasa */
+      color: #f1f5f9;
     }
-
     header {
-      background: #020617;
-      padding: 20px;
+      background: linear-gradient(135deg, #020617 0%, #1e293b 100%);
+      padding: 30px 20px;
       text-align: center;
-      border-bottom: 2px solid #22c55e;
+      border-bottom: 3px solid #00ff88;
     }
-
     header h1 {
       margin: 0;
-      color: #22c55e;
-      font-size: 28px;
+      color: #00ff88;
+      font-size: 32px;
+      letter-spacing: 2px;
     }
-
     header p {
       margin: 5px 0 0;
       color: #94a3b8;
+      font-size: 14px;
     }
-
     nav {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 15px;
       background: #020617;
-      padding: 12px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-
     nav a {
-      color: #e5e7eb;
+      color: #ffffff;
       text-decoration: none;
       font-weight: bold;
+      font-size: 14px;
+      padding: 5px 10px;
+      border-radius: 5px;
     }
-
     nav a:hover {
-      color: #22c55e;
+      background: #00ff88;
+      color: #020617;
     }
-
     .container {
-      max-width: 1100px;
+      max-width: 600px;
       margin: auto;
       padding: 20px;
     }
-
     .section-title {
-      font-size: 22px;
-      margin-bottom: 10px;
+      font-size: 20px;
+      margin: 20px 0 15px;
       color: #38bdf8;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
     }
-
     .card {
-      background: #020617;
-      padding: 18px;
-      border-radius: 10px;
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
       margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      border: 1px solid #334155;
     }
-
     .card h2 {
       margin-top: 0;
-      color: #22c55e;
+      font-size: 18px;
+      color: #00ff88;
     }
-
     .btn {
-      display: inline-block;
-      padding: 10px 16px;
-      border-radius: 6px;
+      display: block;
+      padding: 12px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin-right: 10px;
-      margin-top: 10px;
-    }
-
-    .btn.free {
-      background: #22c55e;
-      color: #020617;
-    }
-
-    .btn.vip {
-      background: #f97316;
-      color: #020617;
-    }
-
-    .vip-box {
-      border: 2px dashed #f97316;
-      background: #020617;
-    }
-
-    footer {
-      background: #020617;
       text-align: center;
-      padding: 15px;
-      color: #94a3b8;
-      font-size: 14px;
+      margin-top: 10px;
+      transition: 0.3s;
     }
-
+    .btn.free {
+      background: #334155;
+      color: white;
+    }
+    .btn.vip {
+      background: #f59e0b;
+      color: #020617;
+    }
+    .btn:active {
+      transform: scale(0.95);
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+      font-size: 12px;
+    }
     .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background: #25D366;
       color: white;
-      padding: 12px 16px;
-      border-radius: 50px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      font-size: 24px;
       text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 0 10px rgba(0,0,0,0.6);
     }
   </style>
 </head>
-
 <body>
 
 <header>
@@ -130,57 +127,35 @@
 </header>
 
 <nav>
-  <a href="#">Home</a>
-  <a href="#">ETS2</a>
-  <a href="#">BUSSID</a>
-  <a href="#">TOE3</a>
-  <a href="#">VIP</a>
+  <a href="index.html">Home</a>
+  <a href="mods.html">Mods</a>
+  <a href="vip.html">VIP</a>
 </nav>
 
 <div class="container">
-
   <h2 class="section-title">🔥 Latest Mods</h2>
 
   <div class="card">
     <h2>ETS2 – Tanzania Skin Pack</h2>
-    <p>
-      ✔ Compatible with latest ETS2<br>
-      ✔ Free & VIP versions available
-    </p>
-    <a href="#" class="btn free">Download FREE</a>
-    <a href="#" class="btn vip">Buy VIP (Tsh 3,000)</a>
+    <p>✔ Compatible with latest ETS2<br>✔ Free & VIP versions available</p>
+    <a href="mods.html" class="btn free">View Details</a>
+    <a href="vip.html" class="btn vip">Get VIP (Tsh 3,000)</a>
   </div>
 
   <div class="card">
-    <h2>BUSSID – Tanzania Traffic Mod</h2>
-    <p>
-      ✔ Stable version<br>
-      ✔ VIP version no ads
-    </p>
-    <a href="#" class="btn free">Download FREE</a>
-    <a href="#" class="btn vip">Buy VIP (Tsh 2,000)</a>
+    <h2>BUSSID – Tanzania Traffic</h2>
+    <p>✔ Realistic AI Traffic<br>✔ Lag Free</p>
+    <a href="mods.html" class="btn free">View Details</a>
+    <a href="vip.html" class="btn vip">Get VIP (Tsh 2,000)</a>
   </div>
-
-  <h2 class="section-title">🔐 VIP Packages</h2>
-
-  <div class="card vip-box">
-    <p>
-      🔓 VIP WEEK – Tsh 3,000<br>
-      🔓 VIP MONTH – Tsh 5,000<br><br>
-      ✔ Access mods & skins premium<br>
-      ✔ No ads • Exclusive content
-    </p>
-    <a href="#" class="btn vip">Get VIP (Coming Soon)</a>
-  </div>
-
 </div>
 
 <footer>
-  © 2026 DAUDI GARAGE • Mods & Skins for Real Gamers
+  © 2026 DAUDI GARAGE • Built by Daudi Mtweve
 </footer>
 
 <a class="whatsapp" href="https://wa.me/255689733429" target="_blank">
-  💬 WhatsApp
+  <span style="font-size: 12px;">WA</span>
 </a>
 
 </body>
